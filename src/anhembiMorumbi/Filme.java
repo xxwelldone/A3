@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Filme {
 	// Locadora de filmes
+	
 	private String nome;
 	private Date anoLacamento;
 	private String genero;
@@ -59,6 +60,11 @@ public class Filme {
 	public Filme() {
 		Filme.id++;
 		
+	}
+	@Override
+	public String toString() {
+		return "Filme [nome=" + nome + ", anoLacamento=" + anoLacamento + ", genero=" + genero + ", diretor=" + diretor
+				+ ", classificacao=" + classificacao + "]";
 	}
 	
 	
